@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mobile Accessory — Brand</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body class="bg-gray-50 font-sans">
+
+<!-- NAVBAR (shared) -->
+<header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex items-center gap-4 py-3">
+      <a href="index.html" class="flex items-center gap-2 font-bold text-blue-600 text-xl shrink-0">
+        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white text-sm">🛍</div>Brand
+      </a>
+      <div class="flex flex-1 max-w-2xl">
+        <input type="text" placeholder="Search" class="flex-1 border border-gray-300 rounded-l-md px-4 py-2 text-sm focus:outline-none focus:border-blue-500"/>
+        <select class="border-t border-b border-gray-300 px-3 py-2 text-sm bg-white focus:outline-none">
+          <option>All category</option>
+        </select>
+        <button class="bg-blue-600 text-white px-5 py-2 rounded-r-md text-sm font-medium hover:bg-blue-700">Search</button>
+      </div>
+      <nav class="flex items-center gap-5 ml-auto text-sm text-gray-600">
+        <a href="#" class="flex flex-col items-center gap-0.5 hover:text-blue-600"><span class="text-xl">👤</span>Profile</a>
+        <a href="#" class="flex flex-col items-center gap-0.5 hover:text-blue-600"><span class="text-xl">💬</span>Message</a>
+        <a href="#" class="flex flex-col items-center gap-0.5 hover:text-blue-600"><span class="text-xl">📋</span>Orders</a>
+        <a href="cart.html" class="flex flex-col items-center gap-0.5 hover:text-blue-600"><span class="text-xl">🛒</span>My cart</a>
+      </nav>
+    </div>
+    <div class="flex items-center justify-between border-t border-gray-100 py-2 text-sm">
+      <div class="flex items-center gap-6">
+        <button class="flex items-center gap-1 font-medium hover:text-blue-600">☰ All category</button>
+        <a href="#" class="hover:text-blue-600">Hot offers</a>
+        <a href="#" class="hover:text-blue-600">Gift boxes</a>
+        <a href="#" class="hover:text-blue-600">Projects</a>
+        <a href="#" class="hover:text-blue-600">Menu item</a>
+        <a href="#" class="hover:text-blue-600">Help ▾</a>
+      </div>
+      <div class="flex items-center gap-4 text-gray-500 text-xs">
+        <span>English, USD ▾</span><span>Ship to 🇩🇪 ▾</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="max-w-7xl mx-auto px-4 py-4">
+  <!-- Breadcrumb -->
+  <nav class="text-xs text-gray-500 mb-4 flex gap-2">
+    <a href="index.html" class="hover:text-blue-600">Home</a> ›
+    <a href="#" class="hover:text-blue-600">Clothings</a> ›
+    <a href="#" class="hover:text-blue-600">Men's wear</a> ›
+    <span class="text-gray-800">Summer clothing</span>
+  </nav>
+
+  <div class="flex gap-4">
+    <!-- ═══════ SIDEBAR FILTERS ═══════ -->
+    <aside class="w-52 shrink-0" id="sidebar">
+      <!-- Category -->
+      <div class="bg-white rounded-xl border border-gray-200 p-4 mb-3">
+        <div class="flex justify-between items-center mb-3">
+          <h3 class="font-semibold text-sm text-gray-800">Category</h3>
+          <span class="text-gray-400 cursor-pointer">∧</span>
+        </div>
+        <ul class="space-y-1.5 text-xs text-gray-600">
+          <li><a href="#" class="text-blue-600 font-medium hover:underline">Mobile accessory</a></li>
+          <li><a href="#" class="hover:text-blue-600">Electronics</a></li>
+          <li><a href="#" class="hover:text-blue-600">Smartphones</a></li>
+          <li><a href="#" class="hover:text-blue-600">Modern tech</a></li>
+          <li><a href="#" class="text-blue-600 hover:underline text-xs">See all</a></li>
+        </ul>
+      </div>
+
+      <!-- Brands -->
+      <div class="bg-white rounded-xl border border-gray-200 p-4 mb-3">
+        <div class="flex justify-between items-center mb-3">
+          <h3 class="font-semibold text-sm text-gray-800">Brands</h3>
+          <span class="text-gray-400 cursor-pointer">∧</span>
+        </div>
+        <ul class="space-y-2 text-xs text-gray-700">
+          <li class="flex items-center gap-2"><input type="checkbox" checked class="accent-blue-600"/> Samsung</li>
+          <li class="flex items-center gap-2"><input type="checkbox" checked class="accent-blue-600"/> Apple</li>
+          <li class="flex items-center gap-2"><input type="checkbox" class="accent-blue-600"/> Huawei</li>
+          <li class="flex items-center gap-2"><input type="checkbox" checked class="accent-blue-600"/> Pocco</li>
+          <li class="flex items-center gap-2"><input type="checkbox" class="accent-blue-600"/> Lenovo</li>
+          <li><a href="#" class="text-blue-600 hover:underline">See all</a></li>
+        </ul>
+      </div>
+
+      <!-- Features -->
+      <div class="bg-white rounded-xl border border-gray-200 p-4 mb-3">
+        <div class="flex justify-between items-center mb-3">
+          <h3 class="font-semibold text-sm text-gray-800">Features</h3>
+          <span class="text-gray-400 cursor-pointer">∧</span>
+        </div>
+        <ul class="space-y-2 text-xs text-gray-700">
+          <li class="flex items-center gap-2"><input type="checkbox" checked class="accent-blue-600"/> Metallic</li>
+          <li class="flex items-center gap-2"><input type="checkbox" class="accent-blue-600"/> Plastic cover</li>
+          <li class="flex items-center gap-2"><input type="checkbox" class="accent-blue-600"/> 8GB Ram</li>
+          <li class="flex items-center gap-2"><input type="checkbox" class="accent-blue-600"/> Super power</li>
+          <li class="flex items-center gap-2"><input type="checkbox" class="accent-blue-600"/> Large Memory</li>
+          <li><a href="#" class="text-blue-600 hover:underline">See all</a></li>
+        </ul>
+      </div>
+
+      <!-- Price Range -->
+      <div class="bg-white rounded-xl border border-gray-200 p-4 mb-3" id="price-section">
+        <div class="flex justify-between items-center mb-3 cursor-pointer" onclick="toggleSection('price-body')">
+          <h3 class="font-semibold text-sm text-gray-800">Price range</h3>
+          <span class="text-gray-400" id="price-icon">∧</span>
+        </div>
+        <div id="price-body">
+          <input type="range" min="0" max="999999" value="400000" class="w-full accent-blue-600 mb-2"/>
+          <div class="flex gap-2">
+            <input type="number" placeholder="Min" value="0" class="w-full border border-gray-200 rounded px-2 py-1 text-xs focus:outline-none focus:border-blue-400"/>
+            <input type="number" placeholder="Max" value="999999" class="w-full border border-gray-200 rounded px-2 py-1 text-xs focus:outline-none focus:border-blue-400"/>
+          </div>
+          <button class="mt-2 w-full border border-blue-600 text-blue-600 text-xs py-1 rounded hover:bg-blue-50 transition">Apply</button>
+        </div>
+      </div>
+
+      <!-- Condition -->
+      <div class="bg-white rounded-xl border border-gray-200 p-4 mb-3">
+        <div class="flex justify-between items-center mb-3 cursor-pointer" onclick="toggleSection('cond-body')">
+          <h3 class="font-semibold text-sm text-gray-800">Condition</h3>
+          <span class="text-gray-400" id="cond-icon">∨</span>
+        </div>
+        <div id="cond-body" class="hidden">
+          <ul class="space-y-2 text-xs text-gray-700">
+            <li class="flex items-center gap-2"><input type="radio" name="cond" checked class="accent-blue-600"/> Any</li>
+            <li class="flex items-center gap-2"><input type="radio" name="cond" class="accent-blue-600"/> Refurbished</li>
+            <li class="flex items-center gap-2"><input type="radio" name="cond" class="accent-blue-600"/> Brand new</li>
+            <li class="flex items-center gap-2"><input type="radio" name="cond" class="accent-blue-600"/> Old items</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Ratings -->
+      <div class="bg-white rounded-xl border border-gray-200 p-4 mb-3">
+        <div class="flex justify-between items-center mb-3 cursor-pointer" onclick="toggleSection('ratings-body')">
+          <h3 class="font-semibold text-sm text-gray-800">Ratings</h3>
+          <span class="text-gray-400" id="ratings-icon">∧</span>
+        </div>
+        <div id="ratings-body">
+          <ul class="space-y-2 text-xs">
+            <li class="flex items-center gap-2"><input type="checkbox" class="accent-blue-600"/><span class="text-yellow-400">★★★★★</span></li>
+            <li class="flex items-center gap-2"><input type="checkbox" class="accent-blue-600"/><span class="text-yellow-400">★★★★</span><span class="text-gray-300">★</span></li>
+            <li class="flex items-center gap-2"><input type="checkbox" class="accent-blue-600"/><span class="text-yellow-400">★★★</span><span class="text-gray-300">★★</span></li>
+            <li class="flex items-center gap-2"><input type="checkbox" class="accent-blue-600"/><span class="text-yellow-400">★★</span><span class="text-gray-300">★★★</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Manufacturer -->
+      <div class="bg-white rounded-xl border border-gray-200 p-4">
+        <div class="flex justify-between items-center cursor-pointer" onclick="toggleSection('mfr-body')">
+          <h3 class="font-semibold text-sm text-gray-800">Manufacturer</h3>
+          <span class="text-gray-400" id="mfr-icon">∨</span>
+        </div>
+        <div id="mfr-body" class="hidden mt-3">
+          <ul class="space-y-2 text-xs text-gray-700">
+            <li class="flex items-center gap-2"><input type="checkbox" class="accent-blue-600"/> Apple Inc.</li>
+            <li class="flex items-center gap-2"><input type="checkbox" class="accent-blue-600"/> Samsung Electronics</li>
+            <li class="flex items-center gap-2"><input type="checkbox" class="accent-blue-600"/> Huawei Technologies</li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ═══════ MAIN CONTENT ═══════ -->
+    <div class="flex-1">
+      <!-- Top bar -->
+      <div class="bg-white rounded-xl border border-gray-200 px-4 py-3 mb-3 flex items-center justify-between">
+        <p class="text-sm text-gray-700"><span class="font-semibold">12,911 items</span> in <span class="font-semibold">Mobile accessory</span></p>
+        <div class="flex items-center gap-3">
+          <label class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer">
+            <input type="checkbox" class="accent-blue-600" id="verified-only"/> Verified only
+          </label>
+          <select class="border border-gray-200 rounded-md px-3 py-1.5 text-xs focus:outline-none">
+            <option>Featured</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest</option>
+          </select>
+          <!-- View toggle -->
+          <div class="flex border border-gray-200 rounded-md overflow-hidden">
+            <button id="grid-btn" onclick="setView('grid')" class="px-3 py-1.5 text-sm bg-blue-600 text-white transition">⊞</button>
+            <button id="list-btn" onclick="setView('list')" class="px-3 py-1.5 text-sm bg-white text-gray-600 hover:bg-gray-50 transition">☰</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Active filters -->
+      <div class="flex flex-wrap gap-2 mb-3 text-xs" id="active-filters">
+        <span class="flex items-center gap-1 border border-gray-300 rounded-full px-3 py-1 text-gray-700">Samsung <button onclick="removeFilter(this)" class="text-gray-400 hover:text-red-500 ml-1">✕</button></span>
+        <span class="flex items-center gap-1 border border-gray-300 rounded-full px-3 py-1 text-gray-700">Apple <button onclick="removeFilter(this)" class="text-gray-400 hover:text-red-500 ml-1">✕</button></span>
+        <span class="flex items-center gap-1 border border-gray-300 rounded-full px-3 py-1 text-gray-700">Metallic <button onclick="removeFilter(this)" class="text-gray-400 hover:text-red-500 ml-1">✕</button></span>
+        <button class="text-blue-600 hover:underline px-2">Clear all filter</button>
+      </div>
+
+      <!-- Products -->
+      <div id="products-container" class="grid grid-cols-3 gap-4 mb-4">
+        <!-- Product cards generated by JS -->
+      </div>
+
+      <!-- Pagination -->
+      <div class="bg-white rounded-xl border border-gray-200 px-4 py-3 flex items-center justify-end gap-2 text-sm">
+        <div class="flex items-center gap-2 mr-4">
+          <span class="text-gray-600 text-xs">Show</span>
+          <select class="border border-gray-200 rounded px-2 py-1 text-xs focus:outline-none"><option>10</option><option>20</option><option>50</option></select>
+        </div>
+        <button class="w-8 h-8 flex items-center justify-center border border-gray-200 rounded hover:bg-gray-50 text-gray-500">‹</button>
+        <button class="w-8 h-8 flex items-center justify-center bg-blue-600 text-white rounded text-xs">1</button>
+        <button class="w-8 h-8 flex items-center justify-center border border-gray-200 rounded hover:bg-gray-50 text-xs text-gray-700">2</button>
+        <button class="w-8 h-8 flex items-center justify-center border border-gray-200 rounded hover:bg-gray-50 text-xs text-gray-700">3</button>
+        <button class="w-8 h-8 flex items-center justify-center border border-gray-200 rounded hover:bg-gray-50 text-gray-500">›</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Newsletter + Footer shared -->
+<div class="bg-gray-100 py-10 text-center mt-8">
+  <h3 class="font-semibold text-gray-800 text-lg mb-1">Subscribe on our newsletter</h3>
+  <p class="text-sm text-gray-500 mb-4">Get daily news on upcoming offers from many suppliers all over the world</p>
+  <div class="flex justify-center gap-2">
+    <input type="email" placeholder="✉ Email" class="border border-gray-300 rounded-md px-4 py-2 text-sm w-64 focus:outline-none"/>
+    <button class="bg-blue-600 text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-blue-700">Subscribe</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/products.js"></script>
+</body>
+</html>
